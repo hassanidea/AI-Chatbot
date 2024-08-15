@@ -24,7 +24,7 @@ export default function Home() {
     setHistory((history) => [ ...history, {role: "model", parts: [{text: data}] }]);
   };
 
-  return (
+  return (<>
     <Box
       width={'100vw'}
       height={'100vh'}
@@ -130,5 +130,6 @@ export default function Home() {
         </Box>
       </Stack>
     </Box>
+    </>
   );
 }
